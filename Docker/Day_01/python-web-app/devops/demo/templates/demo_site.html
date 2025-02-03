@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Docker</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #00aaff;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        border-bottom: 5px solid #0077cc;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px 20px;
+      }
+      .card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        margin: 20px;
+        padding: 30px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+      .card h2 {
+        font-size: 2rem;
+        color: #333;
+      }
+      .card p {
+        color: #555;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #00aaff;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #0077cc;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Docker!</h1>
+      <p>Let's learn about containers in the easiest way possible</p>
+    </header>
+
+    <section class="container">
+      <div class="card">
+        <h2>What is Docker?</h2>
+        <p>
+          Docker is a platform that allows you to build, run, and share
+          applications in containers. It makes it easier to package software and
+          move it between environments.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h2>What is a Container?</h2>
+        <p>
+          A container is a lightweight, portable unit that includes everything
+          needed to run a piece of software, such as the code, system libraries,
+          and settings.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h2>Why Use Docker?</h2>
+        <p>
+          Docker simplifies deploying applications by making sure they run the
+          same way on any machine. It eliminates the "it works on my machine"
+          problem.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <h2>How Does Docker Work?</h2>
+        <p>
+          Docker uses a client-server architecture. The Docker client sends
+          requests to the Docker daemon to build, run, and manage containers.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h2>Containers vs Virtual Machines</h2>
+        <p>
+          Containers share the host operating system, which makes them
+          lightweight and faster. Virtual Machines run entire operating systems,
+          making them heavier.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h2>Getting Started with Docker</h2>
+        <p>
+          To get started, you need to install Docker on your machine. You can
+          then begin creating containers and managing them through simple
+          commands.
+        </p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Docker Fundamentals | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
