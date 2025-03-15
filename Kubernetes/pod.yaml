@@ -5,8 +5,9 @@ metadata:
 spec:
   containers:
     - name: weekday
-      image: praneeth200244/weekday_with_multistage:latest
+      image: praneeth200244/weekday_with_env_variables:latest
       ports:
         - containerPort: 80
-      args: ["5"]  # Example argument to print Friday (number 5)
-
+      env:
+        - name: DAY_NUMBER
+          value: "5"  # Default value, can be changed dynamically later
